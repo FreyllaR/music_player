@@ -15,6 +15,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMusicPlayer"
         tools:targetApi="31">
+        <service
+            android:name=".SoundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService2"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService3"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService4"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService5"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService6"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService7"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService8"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService9"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".SoundService10"
+            android:enabled="true"
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
