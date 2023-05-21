@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.mymusicplayer'
+    namespace 'com.example.belezza'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.mymusicplayer"
+        applicationId "com.example.belezza"
         minSdk 29
         targetSdk 33
         versionCode 1

@@ -1,4 +1,4 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

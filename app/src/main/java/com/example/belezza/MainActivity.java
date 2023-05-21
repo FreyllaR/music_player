@@ -1,18 +1,24 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import android.os.Bundle;
 
-import com.example.mymusicplayer.databinding.ActivityMainBinding;
+
+import com.example.belezza.databinding.ActivityMainBinding;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+
+
+    Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,5 +46,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         tabLayoutMediator.attach();
+        toolbar = binding.toolbar2;
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
     }
 }

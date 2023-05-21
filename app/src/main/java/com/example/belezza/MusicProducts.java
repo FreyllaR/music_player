@@ -1,12 +1,8 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 

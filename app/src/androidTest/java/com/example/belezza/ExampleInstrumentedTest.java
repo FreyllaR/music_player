@@ -1,4 +1,4 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import android.content.Context;
 

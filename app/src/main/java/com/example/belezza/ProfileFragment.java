@@ -1,4 +1,4 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import android.os.Bundle;
 
@@ -8,17 +8,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mymusicplayer.databinding.FragmentDown2Binding;
+import com.example.belezza.databinding.FragmentProfile2Binding;
 
-public class DownFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    private FragmentDown2Binding binding;
 
-    public DownFragment() {
+    private FragmentProfile2Binding binding;
+
+
+    public ProfileFragment() {
 
     }
-    public static DownFragment newInstance(int page) {
-        DownFragment fragment = new DownFragment();
+    public static ProfileFragment newInstance(int page) {
+        ProfileFragment fragment = new ProfileFragment();
         Bundle args = new Bundle();
         args.putInt("num", page);
         fragment.setArguments(args);
@@ -33,6 +35,6 @@ public class DownFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_down2, container, false);
+        return inflater.inflate(R.layout.fragment_profile2, container, false);
     }
 }

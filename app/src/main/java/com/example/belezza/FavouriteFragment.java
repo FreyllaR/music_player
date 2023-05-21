@@ -1,4 +1,4 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mymusicplayer.databinding.FragmentFavourite2Binding;
+import com.example.belezza.databinding.FragmentFavourite2Binding;
 
 public class FavouriteFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.example.mymusicplayer;
+package com.example.belezza;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 
-import com.example.mymusicplayer.databinding.ItemBinding;
+import com.example.belezza.databinding.ItemBinding;
 
 import java.util.ArrayList;
 
