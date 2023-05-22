@@ -27,7 +27,6 @@ public class MusicFragment extends Fragment {
     int[] myImageList = new int[]{R.drawable.kukla_kolduna, R.drawable.komarovo, R.drawable.marmelade, R.drawable.pachka_sigaret, R.drawable.blinding_lights, R.drawable.numb_linkin, R.drawable.brother_louie, R.drawable.otpuskai, R.drawable.thunder, R.drawable.eminem_mock};
 
     BoxAdapter boxAdapter;
-
     ImageButton butcheck;
 
     ListView lvMain;
@@ -75,6 +74,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().startService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("kuklakolduna", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 1){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -86,6 +88,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().startService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("komarovo", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 2){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -97,6 +102,9 @@ public class MusicFragment extends Fragment {
                     getActivity().startService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("marmalade", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 3){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -108,6 +116,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("pachkasigaret", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 4){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -119,6 +130,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("blindlight", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 5){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -130,6 +144,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("numb", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 6){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -141,6 +158,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("brolou", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 7){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -151,7 +171,10 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService4.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
-                    getActivity().stopService(new Intent(getActivity(), SoundService.class));;
+                    getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("otpuskai", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 8){
                     getActivity().stopService(new Intent(getActivity(), SoundService10.class));
                     getActivity().startService(new Intent(getActivity(), SoundService9.class));
@@ -163,6 +186,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("thunder", PlayerActivity.class);
+                    startActivity(intent);
                 }else if(position == 9){
                     getActivity().startService(new Intent(getActivity(), SoundService10.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService9.class));
@@ -174,6 +200,9 @@ public class MusicFragment extends Fragment {
                     getActivity().stopService(new Intent(getActivity(), SoundService3.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService2.class));
                     getActivity().stopService(new Intent(getActivity(), SoundService.class));
+                    Intent intent = new Intent(getActivity(), PlayerActivity.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    intent.putExtra("mockin", PlayerActivity.class);
+                    startActivity(intent);
                 }
             }
         });
