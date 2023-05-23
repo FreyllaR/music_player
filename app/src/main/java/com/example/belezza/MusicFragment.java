@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -54,6 +55,7 @@ public class MusicFragment extends Fragment {
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = FragmentMusic2Binding.inflate(inflater, container, false);
+        products.clear();
         fillData();
         boxAdapter = new BoxAdapter(getCtx(), products);
         lvMain = binding.lvMain;

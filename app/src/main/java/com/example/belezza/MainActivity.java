@@ -1,8 +1,8 @@
 package com.example.belezza;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import android.os.Bundle;
@@ -17,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
 
 
-    Toolbar toolbar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         FragmentStateAdapter pageAdapter = new MyAdapter(this);
         binding.pager.setAdapter(pageAdapter);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(binding.tabLayout, binding.pager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
@@ -46,8 +46,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         tabLayoutMediator.attach();
-        toolbar = binding.toolbar2;
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle(null);
     }
 }
