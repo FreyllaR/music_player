@@ -1,5 +1,6 @@
 package com.example.belezza;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,8 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         Thread welcomeThread = new Thread() {
 
             @Override

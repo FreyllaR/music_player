@@ -54,14 +54,6 @@ public class BoxAdapter extends BaseAdapter{
         binding.ivImage.setImageResource(p.img);
         binding.mtext.setText(p.mustext);
 
-
-        check = binding.butcheck;
-
-
-        check.setOnClickListener(v -> {
-            check.setImageResource(R.drawable.baseline_favorite_25);
-        });
-
         return binding.getRoot();
 
     }

@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     tab.setText("Загрузки");
                     tab.setIcon(R.drawable.icon_down);
                 } else if (position == 2){
-                    tab.setText("Любимое");
-                    tab.setIcon(R.drawable.icon_lovely);
-                }else if (position == 3){
                     tab.setText("Профиль");
                     tab.setIcon(R.drawable.icon_acc);
                 }

@@ -19,8 +19,6 @@ public class MyAdapter extends FragmentStateAdapter {
         }else if (position == 1){
             return (DownFragment.newInstance(position));
         }else if(position == 2){
-            return (FavouriteFragment.newInstance(position));
-        }else if(position == 3){
             return (ProfileFragment.newInstance(position));
         }
         return null;
@@ -28,6 +26,6 @@ public class MyAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 3;
     }
 }
