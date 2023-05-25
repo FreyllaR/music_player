@@ -1,6 +1,5 @@
 package com.example.belezza;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -18,6 +17,9 @@ public class DownFragment extends Fragment {
 
     private FragmentDown2Binding binding;
 
+    MenuItem fav;
+
+
     public DownFragment() {
 
     }
@@ -30,13 +32,25 @@ public class DownFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+        return binding.getRoot();
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_down2, container, false);
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        menu.clear();
+        inflater.inflate(R.menu.mymenu, menu);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.acdown) {
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

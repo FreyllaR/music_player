@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         FragmentStateAdapter pageAdapter = new MyAdapter(this);
         binding.pager.setAdapter(pageAdapter);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
         TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(binding.tabLayout, binding.pager, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
